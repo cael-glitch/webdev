@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Cael Gardner">
+    <meta name="description" content="History of MLB Teams in the American League Central Division">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLB Team Histories - AL Central</title>
+    <style>
+        /* General Styling - Consistent with previous examples */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light gray background */
+            color: #333;
+        }
+
+        header {
+            background-color: #002D72; /* Dark blue, common MLB header color */
+            color: #ffffff;
+            padding: 1rem 0;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #c4ced4; /* Light gray-blue, neutral navigation color */
+            padding: 0.8rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #0c2340; /* Darker blue for links */
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #aeb4b8;
+            color: #ffffff;
+        }
+
+        main {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1, h2, h3 {
+            color: #0c2340; /* Consistent dark blue for headings */
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        a {
+            color: #007bff; /* Standard blue for links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+
+        section h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #333;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        /* Team-Specific Styles */
+
+        /* Shared team section header style */
+        .team-section-header {
+            padding: 8px 12px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block; /* Makes the background only surround the text */
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for headings */
+        }
+
+        /* Chicago White Sox */
+        .whitesox-header { background-color: #27251F; color: #FFFFFF; } /* Black, White */
+        .whitesox-info { color: #27251F; } /* Black */
+        .whitesox-border { border-color: #C4CED4; } /* Silver/Gray */
+
+        /* Cleveland Guardians */
+        .guardians-header { background-color: #E31937; color: #FFFFFF; } /* Red, White */
+        .guardians-info { color: #002B5C; } /* Navy */
+        .guardians-border { border-color: #002B5C; } /* Navy */
+
+        /* Detroit Tigers */
+        .tigers-header { background-color: #0C2340; color: #FFFFFF; } /* Navy, White */
+        .tigers-info { color: #FA4616; } /* Orange */
+        .tigers-border { border-color: #FA4616; } /* Orange */
+
+        /* Kansas City Royals */
+        .royals-header { background-color: #004687; color: #FFFFFF; } /* Royal Blue, White */
+        .royals-info { color: #7AB2DD; } /* Powder Blue */
+        .royals-border { border-color: #7AB2DD; } /* Powder Blue */
+
+        /* Minnesota Twins */
+        .twins-header { background-color: #002B5C; color: #FFFFFF; } /* Navy, White */
+        .twins-info { color: #D7244C; } /* Red */
+        .twins-border { border-color: #D7244C; } /* Red */
+
+    </style>
+</head>
+
+<body>
+    <!--start page head-->
+    <header>
+        <span>Major League Baseball Team Histories</span>
+    </header>
+    <!--start page navigation-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="al-east.html">AL East</a></li>
+            <li><a href="#">AL Central</a></li>
+            <li><a href="al-west.html">AL West</a></li>
+            <li><a href="nl-east.html">NL East</a></li>
+            <li><a href="nl-central.html">NL Central</a></li>
+            <li><a href="nl-west.html">NL West</a></li>
+        </ul>
+    </nav>
+    <!--start main content-->
+    <main>
+        <h1>American League Central Teams</h1>
+        <p>The American League Central Division, often abbreviated AL Central, consists of five teams located in the Midwestern United States. It was established in 1994 as part of a league-wide realignment.  At its creation, it included the Chicago White Sox, Cleveland Indians, Kansas City Royals, Milwaukee Brewers, and Minnesota Twins. In 1998, the {Link: Milwaukee Brewers moved to the National League Central, and the Detroit Tigers joined the AL Central from the AL East https://baseball.fandom.com/wiki/American_League_Central}. This lineup remains to this day, with the Cleveland team officially changing its name to the {Link: Cleveland Guardians at the end of the 2021 season https://baseball.fandom.com/wiki/American_League_Central}. The AL Central is notable as one of two divisions (along with the NL East) where all member teams have won at least one World Series title.</p>
+
+        <section class="whitesox-border">
+            <h2 class="team-section-header whitesox-header">Chicago White Sox</h2>
+            <p class="whitesox-info">{Link: Founded as the Sioux City Cornhuskers in 1894, the franchise moved to St. Paul in 1895 before settling in Chicago in 1900 as the White Stockings https://en.wikipedia.org/wiki/American_League}. The name was shortened to {Link: White Sox in 1904 https://en.wikipedia.org/wiki/American_League}. They play at {Link: Guaranteed Rate Field https://sports.betmgm.com/en/blog/mlb/al-central-ballparks-bm23/}. Their primary team colors are black and white. A notable player is {Link: Tim Anderson https://www.mlb.com/news/most-indispensable-player-on-each-mlb-team}.</p>
+        </section>
+
+        <section class="guardians-border">
+            <h2 class="team-section-header guardians-header">Cleveland Guardians</h2>
+            <p class="guardians-info">{Link: The team began as the Cleveland Blues in 1901 https://en.wikipedia.org/wiki/American_League}, later becoming the Naps and then the Indians, before adopting the {Link: Guardians name in 2022 https://en.wikipedia.org/wiki/American_League}. They play at {Link: Progressive Field https://sports.betmgm.com/en/blog/mlb/al-central-ballparks-bm23/}. Their primary team colors are red and navy blue. A key player is {Link: José Ramírez https://www.mlb.com/news/most-indispensable-player-on-each-mlb-team}. The Guardians-Twins rivalry is a notable one within the division.</p>
+        </section>
+
+        <section class="tigers-border">
+            <h2 class="team-section-header tigers-header">Detroit Tigers</h2>
+            <p class="tigers-info">{Link: Established in 1901 as a charter franchise of the American League, the Detroit Tigers have remained in Detroit since their inception https://en.wikipedia.org/wiki/American_League}. They play at {Link: Comerica Park https://sports.betmgm.com/en/blog/mlb/al-central-ballparks-bm23/}. Their primary team colors are navy blue and orange. {Link: They have one of the oldest rivalries in baseball with the Chicago White Sox https://en.wikipedia.org/wiki/Tigers%E2%80%93White_Sox_rivalry}. A significant player for the Tigers is {Link: Riley Greene https://www.mlb.com/news/most-indispensable-player-on-each-mlb-team}.</p>
+        </section>
+
+        <section class="royals-border">
+            <h2 class="team-section-header royals-header">Kansas City Royals</h2>
+            <p class="royals-info">{Link: The Kansas City Royals joined the AL as an expansion team in 1969 https://en.wikipedia.org/wiki/American_League}. They won the World Series in 2015. Their home stadium is {Link: Kauffman Stadium https://sports.betmgm.com/en/blog/mlb/al-central-ballparks-bm23/}. Their primary team colors are royal blue and white, with powder blue as an accent. A key player is {Link: Bobby Witt Jr. https://www.mlb.com/news/most-indispensable-player-on-each-mlb-team}.</p>
+        </section>
+
+        <section class="twins-border">
+            <h2 class="team-section-header twins-header">Minnesota Twins</h2>
+            <p class="twins-info">{Link: The Twins franchise began as the Washington Senators in 1901 and relocated to Minnesota in 1961 https://en.wikipedia.org/wiki/American_League}. They play at {Link: Target Field https://www.mlb.com/fans/ballpark-guides}. Their primary team colors are navy blue, red, and white. A notable player is {Link: Byron Buxton https://www.mlb.com/news/most-indispensable-player-on-each-mlb-team}. They share a rivalry with the {Link: Cleveland Guardians https://www.mlb.com/news/mlb-best-rivalries-2023}.</p>
+        </section>
+
+        <p>The AL Central has seen competitive seasons, with teams like the {Link: Detroit Tigers dominating in the early 2010s https://www.baseball-reference.com/bullpen/AL_Central_Division} and the {Link: Guardians and Twins recently vying for the division title https://www.mlb.com/news/mlb-best-rivalries-2023}. The {Link: Royals also broke through with a World Series victory in 2015 https://www.mlb.com/news/most-indispensable-player-on-each-mlb-team}.</p>
+
+    </main>
+
+    <!--start the page footer-->
+    <footer>
+        <p>&copy;2025 &bull; Cael Gardner &bull; web essentials</p>
+    </footer>
+
+</body>
+
+</html>
