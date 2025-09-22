@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Cael Gardner">
+    <meta name="description" content="History of MLB Teams in the National League West Division">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLB Team Histories - NL West</title>
+    <style>
+        /* General Styling - Consistent with previous examples */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light gray background */
+            color: #333;
+        }
+
+        header {
+            background-color: #002D72; /* Dark blue, common MLB header color */
+            color: #ffffff;
+            padding: 1rem 0;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #c4ced4; /* Light gray-blue, neutral navigation color */
+            padding: 0.8rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #0c2340; /* Darker blue for links */
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #aeb4b8;
+            color: #ffffff;
+        }
+
+        main {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1, h2, h3 {
+            color: #0c2340; /* Consistent dark blue for headings */
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        a {
+            color: #007bff; /* Standard blue for links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+
+        section h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #333;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        /* Team-Specific Styles */
+
+        /* Shared team section header style */
+        .team-section-header {
+            padding: 8px 12px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block; /* Makes the background only surround the text */
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for headings */
+            color: white; /* Ensure text is readable on colored backgrounds */
+        }
+
+        /* Arizona Diamondbacks */
+        .diamondbacks-header { background-color: #A71930; } /* Sedona Red */
+        .diamondbacks-info { color: #000000; } /* Black */
+        .diamondbacks-border { border-color: #000000; } /* Black */
+
+        /* Colorado Rockies */
+        .rockies-header { background-color: #333366; } /* Purple */
+        .rockies-info { color: #333366; } /* Purple */
+        .rockies-border { border-color: #8B8D8F; } /* Silver */
+
+        /* Los Angeles Dodgers */
+        .dodgers-header { background-color: #005A9C; } /* Dodger Blue */
+        .dodgers-info { color: #A5AAAD; } /* Gray */
+        .dodgers-border { border-color: #A5AAAD; } /* Gray */
+
+        /* San Diego Padres */
+        .padres-header { background-color: #2F241D; } /* Brown */
+        .padres-info { color: #2F241D; } /* Brown */
+        .padres-border { border-color: #FFC425; } /* Gold */
+
+        /* San Francisco Giants */
+        .giants-header { background-color: #FDB827; } /* Orange */
+        .giants-info { color: #27251F; } /* Black */
+        .giants-border { border-color: #27251F; } /* Black */
+
+    </style>
+</head>
+
+<body>
+    <!--start page head-->
+    <header>
+        <span>Major League Baseball Team Histories</span>
+    </header>
+    <!--start page navigation-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="al-east.html">AL East</a></li>
+            <li><a href="al-central.html">AL Central</a></li>
+            <li><a href="al-west.html">AL West</a></li>
+            <li><a href="nl-east.html">NL East</a></li>
+            <li><a href="nl-central.html">NL Central</a></li>
+            <li>NL West</li>
+        </ul>
+    </nav>
+    <!--start main content-->
+    <main>
+        <h1>National League West Teams</h1>
+        <p>The National League West division was created in 1969. It includes the Arizona Diamondbacks, Colorado Rockies, Los Angeles Dodgers, San Diego Padres, and San Francisco Giants. Notable former members include the Atlanta Braves and Houston Astros. The division is known for the rivalry between the Dodgers and Giants, and its teams have won multiple World Series titles.</p>
+
+        <section class="diamondbacks-border">
+            <h2 class="team-section-header diamondbacks-header">Arizona Diamondbacks</h2>
+            <p class="diamondbacks-info">The Arizona Diamondbacks joined in 1998, winning the World Series in 2001. They play at Chase Field. Their original colors represented Arizona's environment and local sports, later changing to reflect the state's landscape. Their rival is the Los Angeles Dodgers. A key player is Corbin Carroll.</p>
+        </section>
+
+        <section class="rockies-border">
+            <h2 class="team-section-header rockies-header">Colorado Rockies</h2>
+            <p class="rockies-info">The Colorado Rockies joined in 1993. They play at Coors Field, where some seats are one mile above sea level. Their colors are purple, black, and silver. They won the NL pennant in 2007. A key player is Brenton Doyle.</p>
+        </section>
+
+        <section class="dodgers-border">
+            <h2 class="team-section-header dodgers-header">Los Angeles Dodgers</h2>
+            <p class="dodgers-info">A founding member of the NL West in 1969, the Dodgers moved from Brooklyn to Los Angeles in 1958. They play at Dodger Stadium. They are the most successful team in the division, with multiple World Series titles, including in 2020. Their colors are Dodger blue and white. They have a notable rivalry with the San Francisco Giants. Key players include Mookie Betts.</p>
+        </section>
+</body>
+
+</html>
+    

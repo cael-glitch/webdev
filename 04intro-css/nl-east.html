@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Cael Gardner">
+    <meta name="description" content="History of MLB Teams in the National League East Division">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLB Team Histories - NL East</title>
+    <style>
+        /* General Styling - Consistent with previous examples */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light gray background */
+            color: #333;
+        }
+
+        header {
+            background-color: #041E42; /* Dark blue, common MLB header color */
+            color: #ffffff;
+            padding: 1rem 0;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #c4ced4; /* Light gray-blue, neutral navigation color */
+            padding: 0.8rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #0c2340; /* Darker blue for links */
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #aeb4b8;
+            color: #ffffff;
+        }
+
+        main {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1, h2, h3 {
+            color: #0c2340; /* Consistent dark blue for headings */
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        a {
+            color: #007bff; /* Standard blue for links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+
+        section h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #333;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        /* Team-Specific Styles */
+
+        /* Shared team section header style */
+        .team-section-header {
+            padding: 8px 12px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block; /* Makes the background only surround the text */
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for headings */
+            color: white; /* Ensure text is readable on colored backgrounds */
+        }
+
+        /* Atlanta Braves */
+        .braves-header { background-color: #13274F; } /* Navy */
+        .braves-info { color: #C4CED4; } /* Silver/Gray */
+        .braves-border { border-color: #CD143F; } /* Scarlet Red */
+
+        /* Miami Marlins */
+        .marlins-header { background-color: #00A3E0; } /* Miami Blue */
+        .marlins-info { color: #2F241D; } /* Black/Dark Gray */
+        .marlins-border { border-color: #EF3340; } /* Caliente Red */
+
+        /* New York Mets */
+        .mets-header { background-color: #002D72; } /* Royal Blue */
+        .mets-info { color: #FF5910; } /* Orange */
+        .mets-border { border-color: #C4CED4; } /* Gray */
+
+        /* Philadelphia Phillies */
+        .phillies-header { background-color: #E81828; } /* Red */
+        .phillies-info { color: #002D72; } /* Blue */
+        .phillies-border { border-color: #C4CED4; } /* Gray */
+
+        /* Washington Nationals */
+        .nationals-header { background-color: #AB0003; } /* Scarlet Red */
+        .nationals-info { color: #FFFFFF; } /* White */
+        .nationals-border { border-color: #14225A; } /* Navy Blue */
+    </style>
+</head>
+
+<body>
+    <!--start page head-->
+    <header>
+        <span>Major League Baseball Team Histories</span>
+    </header>
+    <!--start page navigation-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="al-east.html">AL East</a></li>
+            <li><a href="al-central.html">AL Central</a></li>
+            <li><a href="al-west.html">AL West</a></li>
+            <li>NL East</li>
+            <li><a href="nl-central.html">NL Central</a></li>
+            <li><a href="nl-west.html">NL West</a></li>
+        </ul>
+    </nav>
+    <!--start main content-->
+    <main>
+        <h1>National League East Teams</h1>
+        <p>The National League East division was created in 1969. It currently consists of five teams: the Atlanta Braves, Miami Marlins, New York Mets, Philadelphia Phillies, and Washington Nationals. The division is notable as one of two in Major League Baseball where all member teams have won at least one World Series title. The Atlanta Braves have won the most division titles with 18.</p>
+
+        <section class="braves-border">
+            <h2 class="team-section-header braves-header">Atlanta Braves</h2>
+            <p class="braves-info">The Atlanta Braves are the oldest continuously operating professional sports franchise in America, founded in Boston in 1871. They moved to Milwaukee in 1953 and then to Atlanta in 1966. They play at Truist Park. The Braves experienced a remarkable run from 1991 to 2005, winning 14 consecutive division titles and a World Series in 1995. They also won World Series titles in 1914, 1957, and 2021. Their team colors are navy blue, scarlet red, and silver. Key players include Hank Aaron, Warren Spahn, Eddie Mathews, Greg Maddux, Tom Glavine, John Smoltz, Chipper Jones, and Ronald Acuña Jr.</p>
+        </section>
+
+        <section class="marlins-border">
+            <h2 class="team-section-header marlins-header">Miami Marlins</h2>
+            <p class="marlins-info">The Miami Marlins were established as the Florida Marlins in 1993, joining the National League as an expansion team. They play at LoanDepot Park, which opened in 2012. Their team colors are midnight black, Miami blue, Caliente red, and slate grey. The Marlins have won two World Series championships (1997 and 2003) and two National League pennants (1997 and 2003).  Notably, they have won the World Series on the only two occasions they made the postseason. Key players include Ivan Rodriguez, Giancarlo Stanton, Sandy Alcántara, Miguel Cabrera, and José Fernández.</p>
+        </section>
+
+        <section class="mets-border">
+            <h2 class="team-section-header mets-header">New York Mets</h2>
+            <p class="mets-info">The New York Mets were founded in 1962 to replace the departed Brooklyn Dodgers and New York Giants. They initially played at the Polo Grounds before moving to Shea Stadium in 1964 and later to Citi Field in 2009. Their colors evoke the blue of the Dodgers and the orange of the Giants. The Mets have won two World Series titles (1969 and 1986) and five National League pennants. They are tied with the Houston Astros for the most pennants won by an expansion team in MLB history. The Mets are also the only expansion team to have clinched multiple World Series championships at home. Key players include Tom Seaver, Mike Piazza, Nolan Ryan, Darryl Strawberry, Dwight Gooden, and Francisco Lindor.</p>
+        </section>
+
+        <section class="phillies-border">
+            <h2 class="team-section-header phillies-header">Philadelphia Phillies</h2>
+            <p class="phillies-info">The Philadelphia Phillies, established in 1883, are the oldest, continuous, one-name, one-city franchise in American professional sports. They are one of the most storied teams in Major League Baseball. The Phillies have won two World Series championships (1980 and 2008) and eight National League pennants. They are the first American sports franchise to amass over 10,000 losses. Since 2004, they have played at Citizens Bank Park. Their colors are red, white, and blue.  Notable players include Mike Schmidt, Steve Carlton, Pete Rose, and Bryce Harper.</p>
+        </section>
+
+        <section class="nationals-border">
+            <h2 class="team-section-header nationals-header">Washington Nationals</h2>
+            <p class="nationals-info">The Washington Nationals franchise originated in 1969 as the Montreal Expos. They relocated to Washington D.C. in 2005 and were renamed the Nationals. They play their home games at Nationals Park. The Nationals won the National League pennant and their first World Series title in 2019, defeating the Houston Astros. They also won their division five times. Their colors are scarlet red, navy blue, and white. Notable players include Stephen Strasburg, Bryce Harper, Max Scherzer, Ryan Zimmerman, Gary Carter, Andre Dawson, and Larry Walker.</p>
+        </section>
+    </main>
+</body>
+
+</html>
+
+       
