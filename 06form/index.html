@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Cael Gardner">
+    <meta name="description" content="Index of MLB, Banana Ball, and Collegiate Summer Teams">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baseball Team Index</title>
+    <style>
+        /* General Styling - More vibrant color scheme */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            /* A brighter off-white */
+            color: #1a1a1a;
+        }
+
+        header {
+            background-color: #004687;
+            /* A deep, rich royal blue */
+            color: #FFC52F;
+            /* A vibrant, energetic gold */
+            padding: 1.5rem 0;
+            text-align: center;
+            font-size: 2.2rem;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            background-color: #27251f;
+            /* Almost black, high contrast */
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            /* White links for maximum visibility */
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover {
+            background-color: #FFC52F;
+            /* Gold on hover */
+            color: #27251f;
+            /* Black text on hover */
+        }
+
+        main {
+            max-width: 960px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: #f8f8e8;
+            /* Soft, creamy background */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #bd3039;
+            /* A powerful, bold red */
+            border-bottom: 3px solid #FFC52F;
+            /* Gold underborder */
+            padding-bottom: 8px;
+            margin-top: 35px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        strong {
+            font-weight: bold;
+            color: #004687;
+            /* Emphasize with royal blue */
+        }
+
+        em {
+            font-style: italic;
+            color: #bd3039;
+            /* Emphasize with bold red */
+        }
+
+        a {
+            color: #007bff;
+            /* Standard blue for links, stands out against white */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+
+        section {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 1px solid #FFC52F;
+            /* Gold border for sections */
+            border-radius: 10px;
+            background-color: #fffaf0;
+            /* A creamy, light yellow background for sections */
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: scale(1.01);
+            /* Subtle hover effect */
+        }
+
+        section h3 {
+            margin-top: 0;
+            color: #27251f;
+            /* Black headings for clarity */
+            border-bottom: 2px dashed #FFC52F;
+            /* Dashed gold underline */
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+            background-color: #27251f;
+            color: #fffaf0;
+            /* Creamy white text */
+            font-size: 1rem;
+            border-top: 4px solid #FFC52F;
+        }
+
+        ul.team-list {
+            list-style-type: square;
+            margin-left: 20px;
+            padding: 5px 0;
+            background-color: #fcf6e7;
+            /* Light creamy background for the list */
+            border-radius: 8px;
+            padding: 15px;
+        }
+
+        ul.team-list li {
+            margin-bottom: 8px;
+            padding-left: 5px;
+            border-left: 3px solid #bd3039;
+            /* Red bar next to list items */
+            background-color: #fffaf0;
+            /* Maintain individual list item background */
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        ul.team-list li a {
+            color: #004687;
+            /* Royal blue links in the lists */
+            font-weight: bold;
+        }
+
+        ul.team-list li a:hover {
+            color: #bd3039;
+            /* Red on hover for list links */
+        }
+
+        /* main image stuff here */
+        figure.wrapped {
+            margin: 0 0 0 10px;
+            width: 40%;
+            float: right;
+        }
+
+        figure.wrapped img {
+            width: 100%;
+            height: auto;
+        }
+
+        figure.wrapped figcaption {
+            text-align: center;
+            font-size: .75rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!--start page head-->
+    <header>
+        <span>Baseball Teams Index</span>
+    </header>
+    <!--start page navigation-->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="players.html">Players</a></li>
+            <li><a href="al-east.html">AL East</a></li>
+            <li><a href="al-central.html">AL Central</a></li>
+            <li><a href="al-west.html">AL West</a></li>
+            <li><a href="nl-east.html">NL East</a></li>
+            <li><a href="nl-central.html">NL Central</a></li>
+            <li><a href="nl-west.html">NL West</a></li>
+            <!-- New link for the shop page -->
+            <li><a href="shop.html">Shop</a></li>
+        </ul>
+    </nav>
+    <!--start main content-->
+    <main>
+        <figure class="wrapped">
+            <img src="images/MLB.png" alt="MLB logo" width="300" height="200">
+            <figcaption></figcaption>
+        </figure>
+        <h1>Index of Baseball Teams and Divisions</h1>
+        <p>This index provides links to detailed information about the Savannah Bananas and their related Banana Ball teams, the Tri-City Chili Peppers, as well as the Major League Baseball (MLB) divisions and the teams within them. Click on a link to learn more about each team or division.</p>
+
+        <!-- New section for players gallery -->
+        <section>
+            <h2>Player Galleries</h2>
+            <p>You can find a showcase of some of the league's players by visiting the <a href="players.html">Player Gallery</a>.</p>
+        </section>
+
+        <section>
+            <h2>Banana Ball Teams</h2>
+            <ul class="team-list">
+                <li><a href="savannahbananas.html">Savannah Bananas</a>: The original Banana Ball team, known for their unique brand of entertainment and fast-paced baseball.</li>
+                <li><a href="partyanimals.html">Party Animals</a>: The main rivals to the Bananas, bringing their own energy and showmanship to Banana Ball.</li>
+                <li><a href="texastailgaters.html">Texas Tailgaters</a>: The newest Banana Ball team, representing Texas and known for their tailgate-themed performances.</li>
+                <li><a href="firefighters.html">Firefighters</a>: A team dedicated to honoring firefighters and first responders, adding a meaningful layer to Banana Ball.</li>
+                <li><a href="indianapolisclowns.html">Indianapolis Clowns</a>: A revival of a historic Negro Leagues team, joining the Banana Ball league in 2026 with a focus on skill and comedic entertainment.</li>
+                <li><a href="coconuts.html">Loco Beach Coconuts</a>: A new Banana Ball team for 2026, known for their beach-themed vibe and entertaining spirit.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Collegiate Summer Baseball</h2>
+            <ul class="team-list">
+                <li><a href="chilipeppers.html">Tri-City Chili Peppers</a>: A collegiate summer team in the Coastal Plain League, known for their unique "Cosmic Baseball" events.</li>
+            </ul>
+        </section>
+
+
+        <section>
+            <h2>Major League Baseball Divisions and Teams</h2>
+            <h3>National League (NL)</h3>  <img src="images/Nl.png" alt="NL Logo" width="300" height="300">
+            <ul class="team-list">
+                <li><a href="nl-east.html">NL East</a>: Comprising the Atlanta Braves, Miami Marlins, New York Mets, Philadelphia Phillies, and Washington Nationals.</li>
+                <li><a href="nl-central.html">NL Central</a>: Featuring the Chicago Cubs, Cincinnati Reds, Milwaukee Brewers, Pittsburgh Pirates, and St. Louis Cardinals.</li>
+                <li><a href="nl-west.html">NL West</a>: Home to the Arizona Diamondbacks, Colorado Rockies, Los Angeles Dodgers, San Diego Padres, and San Francisco Giants.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>American League (AL)</h3> <img src="images/AL.png" alt="AL Logo" width="300" height="300">
+            <ul class="team-list">
+                <li><a href="al-east.html">AL East</a>: The division of the Baltimore Orioles, Boston Red Sox, New York Yankees, Tampa Bay Rays, and Toronto Blue Jays.</li>
+                <li><a href="al-central.html">AL Central</a>: Includes the Chicago White Sox, Cleveland Guardians, Detroit Tigers, Kansas City Royals, and Minnesota Twins.</li>
+                <li><a href="al-west.html">AL West</a>: Featuring the Houston Astros, Los Angeles Angels, Oakland Athletics, Seattle Mariners, and Texas Rangers.</li>
+            </ul>
+        </section>
+    </main>
+    <!--start page footer-->
+    <footer>
+        &copy; 2025 - Cael Gardner - WDD 131
+    </footer>
+</body>
+
+</html>
